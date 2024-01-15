@@ -70,15 +70,42 @@ function createBody() {
 
         document.getElementById("container").appendChild(projectContainer);
     }
-
     projectContainer.appendChild(projectTitle);
     projectContainer.appendChild(cardsContainer);
+}
 
+function createFooter() {
+    let footerContainer = document.createElement("div");
+    footerContainer.id = "footerContainer";
+
+    let footerPic = document.createElement("img");
+    footerPic.src = "../src/imgs/portrait640w.jpg";
+
+    let footerInfo = document.createElement("div");
+    footerInfo.id = "footerInfo";
+
+    let footerTitle = document.createElement("h1");
+    footerTitle.innerText = "Contact me"
+
+    let footerBody = document.createElement("p");
+    footerBody.innerHTML = "Please get in touch if you think our work could be mutually beneficial!";
+
+    footerIcons = document.createElement("div");
+
+    footerInfo.appendChild(footerTitle);
+    footerInfo.appendChild(footerBody);
+    footerInfo.appendChild(footerIcons);
+
+    footerContainer.appendChild(footerInfo);
+    footerContainer.appendChild(footerPic);
+
+    document.getElementById("container").appendChild(footerContainer);
 }
 
 function loadPage() {
     createBio();
     createBody();
+    createFooter();
 }
 
 loadPage();
