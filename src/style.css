@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+/* #container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+} */
+
+#bioContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background: linear-gradient(145deg, #0891b2 40%, white 40%);
+}
+
+#bioImgContainer {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+#bioImgText {
+    font-size: 4.5em;
+    position: absolute;
+    bottom: 0%;
+    left: 5%;
+}
+
+#bioInfo {
+    display: grid;
+    min-width: 300px;
+    max-width: 600px;
+    grid-template-rows: min-content;
+}
+
+#bioIcons {
+    font-size: 1.5rem;
+    justify-self: end;
+}
+
+#bioInfo {
+    background-color: white;
+    border-style: solid;
+    border-left-width: 0;
+    padding: 1rem;
+}
+
+#projectContainer {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#cardsContainer {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-auto-rows: min-content;
+    gap: 5rem;
+}
+
+.card {
+    width: 400px;
+    display: grid;
+    grid-template-rows: min-content 1fr 1fr;
+    border-style: solid;
+}
+
+.card img {
+    width: 400px;
+    border-bottom: solid;
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardIcons {
+    font-size: 1.5rem;
+}
