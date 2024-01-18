@@ -122,13 +122,39 @@ function createFooter() {
     let footerTitle = document.createElement("h1");
     footerTitle.innerText = "Contact me"
 
-    let footerBody = document.createElement("p");
-    footerBody.innerHTML = "Please get in touch if you think our work could be mutually beneficial!";
+    let footerBodyIntro = document.createElement("p");
+    footerBodyIntro.innerHTML = "Please get in touch if you think our work could be mutually beneficial!";
 
-    footerIcons = document.createElement("div");
+    let footerBodyAdd = document.createElement("p");
+    footerBodyAdd.innerHTML = "1234 Random Road, Random Town, California 12345";
+
+    let footerBodyPho = document.createElement("p");
+    footerBodyPho.innerHTML = "555-555-5555";
+
+    let footerBodyEmail = document.createElement("p");
+    footerBodyEmail.innerHTML = "suziewilliams@isnotreal.com";
+
+    let footerIcons = document.createElement("div");
+    footerIcons.id = "footerIcons"
+
+    let gitIcon = document.createElement("i");
+    gitIcon.classList.add("devicon-github-original");
+
+    let linIcon = document.createElement("i");
+    linIcon.classList.add("devicon-linkedin-plain");
+
+    let fbIcon = document.createElement("i");
+    fbIcon.classList.add("devicon-facebook-plain");
+  
+    footerIcons.appendChild(gitIcon);
+    footerIcons.appendChild(linIcon);
+    footerIcons.appendChild(fbIcon);
 
     footerInfo.appendChild(footerTitle);
-    footerInfo.appendChild(footerBody);
+    footerInfo.appendChild(footerBodyIntro);
+    footerInfo.appendChild(footerBodyAdd);
+    footerInfo.appendChild(footerBodyPho);
+    footerInfo.appendChild(footerBodyEmail);
     footerInfo.appendChild(footerIcons);
 
     footerContainer.appendChild(footerInfo);

@@ -3,12 +3,6 @@
     padding: 0;
 
 }
-/* #container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-} */
 
 #bioContainer {
     display: flex;
@@ -36,6 +30,7 @@
     min-width: 300px;
     max-width: 600px;
     grid-template-rows: min-content;
+    grid-row-gap: 10px;
 }
 
 #bioIcons {
@@ -82,4 +77,31 @@
 
 .cardIcons {
     font-size: 1.5rem;
+}
+
+#footerContainer {
+    background-color: #0891b2;
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#footerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+#footerIcons {
+    display: flex;
+    gap: 10px;
+    color: black;
+    font-size: 2.5rem;
+}
+
+#footerInfo img {
+    height: 200px;
 }
